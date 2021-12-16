@@ -1,0 +1,1 @@
+INSERT INTO dog(age, name, breed) VALUES (3, 'Fluffy', 'German Shepherd');

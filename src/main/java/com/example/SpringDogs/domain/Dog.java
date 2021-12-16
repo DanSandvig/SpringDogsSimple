@@ -78,6 +78,12 @@ public class Dog {
 	public void setAge(long age) {
 		this.age = age;
 	}
+	
+
+	@Override
+	public String toString() {
+		return "Dog [id=" + id + ", name=" + name + ", breed=" + breed + ", age=" + age + "]";
+	}
 
 	@Override
 	public int hashCode() {
@@ -85,7 +91,6 @@ public class Dog {
 		int result = 1;
 		result = prime * result + (int) (age ^ (age >>> 32));
 		result = prime * result + ((breed == null) ? 0 : breed.hashCode());
-		result = prime * result + (int) (id ^ (id >>> 32));
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
@@ -106,8 +111,6 @@ public class Dog {
 				return false;
 		} else if (!breed.equals(other.breed))
 			return false;
-		if (id != other.id)
-			return false;
 		if (name == null) {
 			if (other.name != null)
 				return false;
@@ -115,5 +118,5 @@ public class Dog {
 			return false;
 		return true;
 	}
-	
+
 }
