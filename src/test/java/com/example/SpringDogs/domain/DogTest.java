@@ -3,9 +3,8 @@ package com.example.SpringDogs.domain;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
-
-import com.example.SpringDogs.domain.Dog;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 
@@ -29,7 +28,7 @@ public class DogTest {
 		assertEquals(dog.getBreed(), "Lab");
 		assertEquals(dog.getAge(), 6);
 	}
-	
+
 	@Test
 	public void settersTest() {
 		Dog dog = new Dog();
